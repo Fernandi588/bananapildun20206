@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Cup Draw Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div class="container">
+        <h1>🏆 WORLD CUP DRAW SIMULATOR 🏆</h1>
+        
+        <div class="control-panel">
+            <button id="draw-btn" onclick="kocokTim()">Kocok Tim Next!</button>
+            <button id="reset-btn" onclick="resetDraw()" class="btn-reset">Reset</button>
+        </div>
+
+        <!-- Wadah Pot Tim yang Belum Diundi -->
+        <div class="pot-container">
+            <h3>Tim Tersisa di Pot:</h3>
+            <div id="pot-teams" class="pot-teams"></div>
+        </div>
+
+        <!-- Papan Grup -->
+        <div class="grid-groups">
+            <div class="group-card" id="group-A">
+                <div class="group-header">GRUP A</div>
+                <ul class="team-list"></ul>
+            </div>
+            <div class="group-card" id="group-B">
+                <div class="group-header">GRUP B</div>
+                <ul class="team-list"></ul>
+            </div>
+            <div class="group-card" id="group-C">
+                <div class="group-header">GRUP C</div>
+                <ul class="team-list"></ul>
+            </div>
+            <div class="group-card" id="group-D">
+                <div class="group-header">GRUP D</div>
+                <ul class="team-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
